@@ -36,6 +36,11 @@ input[type=number]:focus {
 
 .output {
     margin-bottom: 1em;
+    text-align: right;
+}
+
+.output-label {
+    text-align: left;
 }
 
 h1, h2 {

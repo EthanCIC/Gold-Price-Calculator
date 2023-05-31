@@ -4,25 +4,24 @@
     <title>金價計算器</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-
-    
 </head>
 <body>
-    <h1>金價計算器</h1>
-    <form id="calculator">
-        <label for="goldPrice">國際金價 (USD/oz):</label><br>
-        <input type="number" id="goldPrice" name="goldPrice"><br>
+    <div class="container">
+        <h1>金價計算器</h1>
+        <form id="calculator">
+            <label for="goldPrice">國際金價 (USD/oz):</label><br>
+            <input type="number" id="goldPrice" name="goldPrice"><br>
 
-        <label for="exchangeRate">美元匯率 (USD/TWD):</label><br>
-        <input type="number" id="exchangeRate" name="exchangeRate"><br>
-    </form>
+            <label for="exchangeRate">美元匯率 (USD/TWD):</label><br>
+            <input type="number" id="exchangeRate" name="exchangeRate"><br>
+        </form>
 
-    <h2>結果</h2>
-<div>一公斤價格（美元）：<span id="output1"></span></div>
-<div>一公斤價格（台幣）：<span id="output2"></span></div>
-<div>一台斤價格（台幣）：<span id="output3"></span></div>
+        <h2>價格</h2>
+        <div class="output"><div class="output-label">一公斤：</div><span id="output1"></span> 美元</div>
+        <div class="output"><div class="output-label">一公斤：</div><span id="output2"></span> 台幣</div>
+        <div class="output"><div class="output-label">一台斤：</div><span id="output3"></span> 台幣</div>
+    </div>
 
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
