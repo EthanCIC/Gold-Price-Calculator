@@ -11,5 +11,10 @@ document.getElementById('calculator').addEventListener('input', function(e) {
         document.getElementById('output1').innerText = output1.toFixed(2);
         document.getElementById('output2').innerText = output2.toFixed(2);
         document.getElementById('output3').innerText = output3.toFixed(2);
+    } else {
+        // 其中一個或兩個 input 是空的，清空所有 output
+        document.getElementById('output1').innerText = "";
+        document.getElementById('output2').innerText = "";
+        document.getElementById('output3').innerText = "";
     }
 });
