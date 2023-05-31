@@ -36,11 +36,26 @@ input[type=number]:focus {
 
 .output {
     margin-bottom: 1em;
-    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .output-label {
     text-align: left;
+    flex: 0 0 auto;
+}
+
+.output-value {
+    text-align: right;
+    flex: 1 1 auto;
+}
+
+.unit {
+    margin-left: 0.5em;
 }
 
 h1, h2 {
@@ -49,12 +64,12 @@ h1, h2 {
 
 @media screen and (max-width: 600px) {
     body {
-        font-size: 24px;
+        font-size: 4vw;
     }
 
     input[type=number] {
-        font-size: 24px;
-        padding: 20px;
+        font-size: 4vw;
+        padding: 5vw;
     }
 }
 
